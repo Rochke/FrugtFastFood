@@ -63,12 +63,60 @@ nav {
 .burgerMenu {
   display: flex;
   justify-content: flex-start;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
 }
 
 .burgerMenu > img {
   width: 50px;
   height: 50px;
-  margin: 20px 10px;
+}
+
+.burgerMenu > img,
+.menuToggle {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+
+.menuToggle {
+  opacity: 0;
+  z-index: 1001;
+}
+
+.menuToggle:checked ~ .hamburgerClosed,
+.menuToggle:checked ~ ul {
+  display: block;
+}
+
+.menuToggle:checked ~ .hamburgerOpen {
+  display: none;
+}
+
+.hamburgerClosed {
+  display: none;
+}
+
+.burgerMenu ul {
+  position: absolute;
+  top: calc(80px + 1rem);
+  display: none;
+  width: 100vw;
+  left: 0;
+  min-height: calc(100vh - (80px + 1rem));
+  background-color: hsla(0, 0%, 0%, 0.95);
+  list-style-type: none;
+}
+
+.burgerMenu > ul > li {
+  margin: 2rem 2rem;
+  font-size: 2.5rem;
+}
+
+.burgerMenu > ul > li > a {
+  color: white;
+  text-decoration: none;
 }
 
 body {
@@ -160,6 +208,10 @@ aside {
   main,
   footer {
     width: 80%;
+  }
+
+  .menu {
+    width: auto;
   }
 
   .burgerMenu {
