@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* #region FONT & SIZE */
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.4rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+/* #endregion FONT & SIZE */
+
+/* #region HEADER */
+nav {
+  display: flex;
+  position: fixed;
+  justify-content: flex-end;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0.5rem 0;
+  background-color: hsl(104, 58%, 47%);
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  flex-grow: 1;
+  margin: 10px;
+}
+
+.logo > a > img {
+  height: 60px;
+}
+
+.listMenu {
+  display: none;
+}
+
+.burgerMenu {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.burgerMenu > img {
+  width: 50px;
+  height: 50px;
+  margin: 20px 10px;
+}
+
+body {
+  padding-top: calc(
+    80px + 0.5rem
+  ); /* Prevents Main Content From Interacting With Header */
+}
+
+/* #endregion HEADER */
+
+/* #region MAIN */
+
+main > div > section > img {
+  width: 100%;
+}
+
+main p {
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+h1 {
+  margin: 30px 20px;
+}
+
+/* #endregion MAIN */
+
+/* #region FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: hsl(104, 58%, 47%);
+}
+
+footer p {
+  color: whitesmoke;
+}
+
+footer img {
+  width: 50px;
+  margin-right: 15px;
+  height: 100%;
+}
+
+footer > div > section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+footer > div {
+  margin: 25px;
+}
+
+.marginBottom {
+  margin-bottom: 50px;
+}
+
+.marginTop {
+  margin-top: 50px;
+}
+
+/* #endregion FOOTER */
+
+@media (min-width: 1200px) {
+  /* #region Base Changes (Desktop) */
+
+  .h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  .burgerMenu {
+    display: none;
+  }
+
+  .listMenu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .listMenu > ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    height: 100%;
+  }
+
+  .listMenu > ul > li {
+    height: 100%;
+  }
+
+  .listMenu > ul > li > a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 20px;
+    align-items: center;
+    height: 100%;
+    display: flex;
+  }
+
+  .listMenu > ul > li:hover {
+    background-color: hsla(0, 0%, 0%, 0.3);
+  }
+
+  .menu {
+    height: 100%;
+  }
+
+  #page {
+    display: flex;
+  }
+
+  /* #endregion Base Changes (Desktop) */
+
+  /* #region MAIN */
+
+  main > h1 {
+    margin-left: 2.5%;
+    margin-top: 50px;
+  }
+
+  main > p {
+    margin-left: 2.5%;
+  }
+
+  main > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 200px;
+  }
+
+  main > div > section {
+    width: 20%;
+  }
+
+  main > div > section > img {
+    width: 100%;
+  }
+
+  /* #endregion MAIN */
+
+  /* #region FOOTER */
+
+  footer > * {
+    margin: 0;
+    padding: 0;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  footer > div {
+    margin-top: 0px;
+    margin: 50px 0;
+  }
+
+  footer > div > section {
+    margin: 0;
+  }
+
+  #img2 > img,
+  #img3 > img,
+  #img2 > p,
+  #img3 > p {
+    margin-top: 25px;
+  }
+
+  #img1 > img,
+  #img2 > img,
+  #img3 > img {
+    margin-right: 15px;
+  }
+
+  footer > div > section > img {
+    margin: 0;
+  }
+
+  .marginTop > section {
+    flex-direction: column;
+  }
+
+  .marginTop > section > img {
+    width: 100px;
+  }
+  /* #endregion FOOTER */
+}
