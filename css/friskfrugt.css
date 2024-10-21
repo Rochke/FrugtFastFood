@@ -172,7 +172,7 @@ footer > div {
 main {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  padding: 1rem;
 }
 
 #fruit > img {
@@ -211,7 +211,7 @@ aside {
   }
 
   main {
-    margin: 4rem;
+    padding: 4rem;
   }
 
   .menu {

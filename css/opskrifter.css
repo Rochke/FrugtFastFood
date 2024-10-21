@@ -130,6 +130,10 @@ body {
 
 /* #region MAIN */
 
+main {
+  padding: 1rem;
+}
+
 #græskarsuppe,
 #kikærtebøffer,
 #marokkansk {
@@ -280,6 +284,10 @@ footer > div {
   /* #endregion Base Changes (Desktop) */
 
   /* #region MAIN */
+
+  main {
+    padding: 4rem;
+  }
 
   #underMenu {
     flex-direction: row;

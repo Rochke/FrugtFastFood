@@ -282,10 +282,18 @@ footer > div {
 
   /* #region MAIN */
 
+  main {
+    padding: 4rem;
+  }
+
   #foodMenu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
+  }
+
+  .food > p {
+    display: none;
   }
 
   /* #endregion MAIN */
@@ -296,7 +304,6 @@ footer > div {
     display: flex;
     flex-direction: column;
     width: 20%;
-    padding: 30px;
     padding-top: 48px;
   }
 

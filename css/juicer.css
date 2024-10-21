@@ -131,11 +131,15 @@ body {
 /* #region MAIN */
 
 main {
-  margin: 1rem;
+  padding: 1rem;
 }
 
 main > div > section > img {
   width: 100%;
+}
+
+.text {
+  padding: 50px 0;
 }
 
 /* #endregion MAIN */
@@ -250,12 +254,11 @@ footer > div {
     padding: 4rem;
   }
 
-  main > div {
+  .juice {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     padding-bottom: 200px;
-    gap: 60px;
   }
 
   main > div > section {
