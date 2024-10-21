@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* #region FONT & SIZE */
@@ -129,17 +130,12 @@ body {
 
 /* #region MAIN */
 
+main {
+  margin: 1rem;
+}
+
 main > div > section > img {
   width: 100%;
-}
-
-main p {
-  margin-bottom: 40px;
-  margin-left: 20px;
-}
-
-h1 {
-  margin: 30px 20px;
 }
 
 /* #endregion MAIN */
@@ -196,7 +192,7 @@ footer > div {
 
   main,
   footer {
-    width: 80%;
+    width: 100%;
   }
 
   .menu {
@@ -250,20 +246,16 @@ footer > div {
 
   /* #region MAIN */
 
-  main > h1 {
-    margin-left: 2.5%;
-    margin-top: 50px;
-  }
-
-  main > p {
-    margin-left: 2.5%;
+  main {
+    padding: 4rem;
   }
 
   main > div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     padding-bottom: 200px;
+    gap: 60px;
   }
 
   main > div > section {
